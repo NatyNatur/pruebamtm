@@ -61,12 +61,19 @@ blue #2C4083
     max-width: 2.5rem;
 }
 
-.firstCarousel div {
+.firstCarousel div.owl-stage-outer {
     height: 100vh;
 }
 
 .firstCarousel .car-first-slide {
     background-image: url(../img/edifito-app-para-moviles.jpg);
+}
+
+.firstCarousel .car-second-slide {
+    background-image: url(../img/edifito-transformar-la-gestion.adminsitrativa.jpg);
+}
+
+.firstCarousel .owl-slides {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,9 +106,38 @@ blue #2C4083
     outline: none;
 }
 
-section.moreInfo {
+.moreInfo {
+    margin-top: -15rem;
+}
+
+.moreInfo div {
     background-color: #2C4083;
-    height: 25rem;
+    position: relative;
+    z-index: 20;
+    opacity: .9;
+}
+
+.closeMoreInfo {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    font-size: 2rem;
+}
+
+.leaders {
+    background-color: #ACACAF;
+}
+
+.leaders h4 {
+    letter-spacing: .8rem;
+}
+
+.leaders .leaders-p {
+    font-size: 1.2rem;
+}
+
+.leaders .leaders-counter {
+    font-size: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -112,5 +148,14 @@ section.moreInfo {
     }
     .navbar-brand img {
         height: 4rem;
+    }
+    .leaders .leaders-p {
+        font-size: 1.7rem;
+    }
+    .leaders .leaders-counter {
+        font-size: 2.3rem;
+    }
+    .leaders .leaders-border-right {
+        border-right: 3px solid #FFF;
     }
 }

@@ -33,7 +33,7 @@
                     <span class="rs-icons"><i class="fab fa-facebook"></i></span>
                     <span class="rs-icons"><i class="fab fa-instagram-square"></i></span>
                     <span class="rs-icons"><i class="fab fa-youtube"></i></span>
-                    <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" type="submit"> <i class="fas fa-user"></i> Acceso Cliente</button>
+                    <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" type="button"> <i class="fas fa-user"></i> Acceso Cliente</button>
                     <div class="dropdown dropdown-language d-inline ml-3">
                         <button class="btn btn-language dropdown-toggle btn-sm" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="assets/img/ban-chile.png">
@@ -76,25 +76,83 @@
             </div>
         </div>
     </nav>
-    <div class="firstCarousel owl-carousel">
-        <div class="car-first-slide">
-            <div class="car-box">
-                <h2 class="text-uppercase font-weight-bold">¡Descarga nuestra app!</h2>
-                <h5>
-                    Obtén todas las herramientas necesarias para facilitar tu vida en comunidad desde tu celular.
-                </h5>
+    <section>
+        <div class="firstCarousel owl-carousel">
+            <div class="owl-slides car-first-slide">
+                <div class="car-box">
+                    <h2 class="text-uppercase font-weight-bold">¡Descarga nuestra app!</h2>
+                    <h5>
+                        Obtén todas las herramientas necesarias para facilitar tu vida en comunidad desde tu celular.
+                    </h5>
+                </div>
+            </div>
+            <div>
+                <div class="owl-slides car-second-slide">
+                    <div class="car-box">
+                        <h2 class="text-uppercase font-weight-bold">Somos el partner que te ayuda a simplificar tu trabajo a través de una relación cercana y comprometida. ¡Conócenos!</h2>
+                    </div>
+                </div>
             </div>
         </div>
-        <div> <img src="assets/img/edifito-transformar-la-gestion.adminsitrativa.jpg" alt=""></div>
-    </div>
-    <section class="moreInfo text-center py-4">
-        <h2 class="text-uppercase font-weight-bold">Solicita más información</h2>
-        <p>Déjanos tus datos y una ejecutiva se contactará contigo para darte más información sobre nuestro servicio y sus beneficios.</p>
+        <div class="moreInfo text-center">
+            <div class="container-fluid py-4 px-5">
+                <h2 class="text-uppercase font-weight-bold ">Solicita más información</h2>
+                <span class="closeMoreInfo"><i class="fas fa-times"></i></span>
+                <p>Déjanos tus datos y una ejecutiva se contactará contigo para darte más información sobre nuestro servicio y sus beneficios.</p>
+                <form>
+                    <div class="row px-5">
+                        <div class="col-12 col-md-4 py-2">
+                            <input type="text" class="form-control rounded-0" placeholder="Nombre">
+                        </div>
+                        <div class="col-12 col-md-4 py-2">
+                            <input type="text" class="form-control rounded-0" placeholder="Apellido">
+                        </div>
+                        <div class="col-12 col-md-4 py-2">
+                            <input type="text" class="form-control rounded-0" placeholder="Teléfono">
+                        </div>
+                        <div class="col-12 col-md-4 py-2">
+                            <input type="text" class="form-control rounded-0" placeholder="Correo">
+                        </div>
+                        <div class="col-12 col-md-4 py-2">
+                            <select class="form-control">
+                            <option>Área de interés</option>
+                            <option value="">Administrador</option>
+                            <option value="">Copropietario</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-md-4 py-2">
+                            <button class="btn yellow-btn font-weight-bold btn-block rounded-0 text-uppercase" type="submit">Solicitar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid leaders text-center py-4">
+            <h4 class="text-uppercase font-weight-light mb-4">Líderes en Latinoamérica</h4>
+            <div class="row">
+                <div class="col-6 col-md-3 leaders-border-right">
+                    <p class="leaders-p">+<span class="leaders-counter" data-value="400000"></span><br> clientes</p>
+                </div>
+                <div class="col-6 col-md-3 leaders-border-right">
+                    <p class="leaders-p">+<span class="leaders-counter" data-value="4000"></span><br> edificios y condominios</p>
+                </div>
+                <div class="col-6 col-md-3 leaders-border-right">
+                    <p class="leaders-p">+<span class="leaders-counter" data-value="1500">1500</span> <br> administradores</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <p class="leaders-p">+<span class="leaders-counter" data-value="16">16</span> años <br> de experiencia</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
