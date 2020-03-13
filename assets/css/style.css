@@ -1,0 +1,116 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+}
+
+
+/*
+yellow #DC9C24
+purple #7C629D
+red #C7564F
+blue #2C4083
+*/
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.rs-icons {
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: .2rem .3rem;
+}
+
+.nav-line {
+    border-color: white;
+    width: 60%;
+    margin-right: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: .9rem;
+    color: #FFF;
+}
+
+
+/*
+.navbar-nav .nav-item.active {
+    text-decoration: underline;
+}
+*/
+
+.dropdown-menu {
+    min-width: auto !important;
+}
+
+.btn-language {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.yellow-btn {
+    background-color: #DC9C24;
+    color: #FFF;
+}
+
+.btn-language img,
+.dropdown-language .dropdown-menu .dropdown-item img {
+    border-radius: 50%;
+    border-color: #FFF;
+    max-width: 2.5rem;
+}
+
+.firstCarousel div {
+    height: 100vh;
+}
+
+.firstCarousel .car-first-slide {
+    background-image: url(../img/edifito-app-para-moviles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+    box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+}
+
+.car-box {
+    width: 45rem;
+    padding: 30rem 7rem;
+}
+
+.owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 30rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+    max-height: 6rem;
+}
+
+.owl-nav button i {
+    font-size: 3rem;
+    color: #FFF;
+}
+
+.owl-nav button:focus {
+    outline: none;
+}
+
+section.moreInfo {
+    background-color: #2C4083;
+    height: 25rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: block !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    .navbar-brand img {
+        height: 4rem;
+    }
+}
