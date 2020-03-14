@@ -11,6 +11,26 @@ red #C7564F
 blue #2C4083
 */
 
+.grayFont {
+    color: #ACACAF !important;
+}
+
+.redFont {
+    color: #C7564F;
+}
+
+.yellowFont {
+    color: #DC9C24;
+}
+
+.purpleFont {
+    color: #7C629D;
+}
+
+.blueFont {
+    color: #2C4083;
+}
+
 .navbar-brand img {
     height: 3rem;
 }
@@ -138,6 +158,65 @@ blue #2C4083
 
 .leaders .leaders-counter {
     font-size: 2rem;
+}
+
+.rol-card {
+    background-color: #F1F1F1;
+}
+
+.rol-row .rol-card:nth-child(1) {
+    border-left: #C7564F .8rem solid
+}
+
+.rol-row .rol-card:nth-child(2) {
+    border-left: #7C629D .8rem solid
+}
+
+.rol-row .rol-card:nth-child(3) {
+    border-left: #DC9C24 .8rem solid
+}
+
+.rol-row .rol-card:nth-child(4) {
+    border-left: #2C4083 .8rem solid
+}
+
+.rol-more {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.rol-card:hover .overlay {
+    opacity: 1;
+}
+
+.rol-row .overlay:nth-child(1) {
+    background-color: #C7564F;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 @media (min-width: 768px) {
