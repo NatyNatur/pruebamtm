@@ -238,6 +238,16 @@ h5 {
     border-top: #7C629D .8rem solid
 }
 
+.get-edi {
+    background-image: url(../img/edifito-seccion-quiero-edifito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+    box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+}
+
 @media (min-width: 768px) {
     h2 {
         font-size: 2rem;
