@@ -172,11 +172,11 @@ h5 {
     letter-spacing: .8rem;
 }
 
-.leaders .leaders-p {
+.leaders .leaders-p, .plans-p {
     font-size: 1rem;
 }
 
-.leaders .leaders-counter {
+.leaders .leaders-counter, .plans-p .plans-price {
     font-size: 2rem;
 }
 
@@ -222,6 +222,22 @@ h5 {
     background-color: #2C4083;
 }
 
+.plans .plans-row div {
+    background-color: #FFF;
+}
+
+.plans .plans-row div:nth-child(1) {
+    border-top: #C7564F .8rem solid
+}
+
+.plans .plans-row div:nth-child(2) {
+    border-top: #DC9C24 .8rem solid
+}
+
+.plans .plans-row div:nth-child(3) {
+    border-top: #7C629D .8rem solid
+}
+
 @media (min-width: 768px) {
     h2 {
         font-size: 2rem;
@@ -246,10 +262,10 @@ h5 {
     .moreInfo {
         margin-top: -15rem;
     }
-    .leaders .leaders-p {
-        font-size: 1.7rem;
+    .leaders .leaders-p, .plans-p {
+        font-size: 1.5rem;
     }
-    .leaders .leaders-counter {
+    .leaders .leaders-counter, .plans-p .plans-price {
         font-size: 2.3rem;
     }
     .leaders .leaders-border-right {
