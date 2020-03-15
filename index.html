@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark m-md-4">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark p-md-4">
         <div class="mr-auto">
             <span class="navbar-brand">
                 <img src="assets/img/edifito-logo.png" alt="logo">
@@ -35,7 +35,7 @@
                     <span class="rs-icons"><i class="fab fa-facebook"></i></span>
                     <span class="rs-icons"><i class="fab fa-instagram-square"></i></span>
                     <span class="rs-icons"><i class="fab fa-youtube"></i></span>
-                    <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" type="button"> <i
+                    <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" data-toggle="tooltip" data-placement="bottom" title="¡Pronto!" type="button"> <i
                             class="fas fa-user"></i> Acceso Cliente</button>
                     <div class="dropdown dropdown-language d-inline ml-3">
                         <button class="btn btn-language dropdown-toggle btn-sm" type="button" id="dropdownMenu2"
@@ -59,14 +59,14 @@
                 <div>
                     <ul class="navbar-nav  mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link text-uppercase font-weight-light" href="#">Inicio <span
+                            <a class="nav-link text-uppercase font-weight-light" href="#home">Inicio <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase font-weight-light" href="#">¿Cómo te ayudamos?</a>
+                            <a class="nav-link text-uppercase font-weight-light" href="#getHelp">¿Cómo te ayudamos?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase font-weight-light" href="#">Planes y software</a>
+                            <a class="nav-link text-uppercase font-weight-light" href="#plans">Planes y software</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase font-weight-light" href="#">Medios</a>
@@ -75,7 +75,7 @@
                             <a class="nav-link text-uppercase font-weight-light" href="#">RSE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase font-weight-light" href="#">Contacto</a>
+                            <a class="nav-link text-uppercase font-weight-light" href="#contact">Contacto</a>
                         </li>
                         <li class="nav-item d-none">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -85,7 +85,7 @@
             </div>
         </div>
     </nav>
-    <div class="firstCarousel owl-carousel">
+    <div class="firstCarousel owl-carousel" id="home">
         <div>
             <img src="assets/img/edifito-app-para-moviles.jpg" alt="first">
             <div class="textoverlay">
@@ -106,7 +106,7 @@
             </div>
         </div>
     </div>
-    <div class="moreInfo text-center">
+    <div class="moreInfo text-center" id="contactUs">
         <div class="container-fluid py-4 px-md-5">
             <h2 class="text-uppercase font-weight-bold ">Solicita más información</h2>
             <span class="closeMoreInfo"><i class="fas fa-times"></i></span>
@@ -134,7 +134,7 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-4 py-2">
-                        <button class="btn yellow-btn font-weight-bold btn-block rounded-0 text-uppercase"
+                        <button class="btn yellow-btn font-weight-bold btn-block rounded-0 text-uppercase getInfoForm" data-toggle="tooltip" data-placement="bottom" title="¡Pronto!"
                             type="submit">Solicitar</button>
                     </div>
 
@@ -163,7 +163,7 @@
         </div>
 
     </div>
-    <div class="container get-help text-center py-4">
+    <div class="container get-help text-center py-4" id="getHelp">
         <h2 class="text-uppercase font-weight-bold grayFont mb-4">¿Cómo te ayudamos?</h2>
         <p class="grayFont mb-5">
             Nuestros años de experiencia nos permiten entregarte todas las herramientas, conocimientos y soportes
@@ -236,7 +236,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid text-center bckcolor-gray plans py-4 grayFont">
+    <div class="container-fluid text-center bckcolor-gray plans py-4 grayFont" id="plans">
         <h2 class="text-uppercase font-weight-bold mb-4">Planes</h2>
         <div class="row d-flex align-items-center plans-row justify-content-around">
             <div class="col-12 col-sm-3 mb-2 mb-sm-0 py-4">
@@ -248,7 +248,7 @@
                     <p>Gastos Comunes</p>
                     <p>Instalaciones y mensajerías</p>
                 </div>
-                       <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" type="button"> Ver más</button>
+                       <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" data-toggle="tooltip" data-placement="bottom" title="¡Pronto!" type="button"> Ver más</button>
             </div>
             <div class="col-12 col-sm-3 mb-2 mb-sm-0 py-4">
                 <h4 class="text-uppercase font-weight-bold">Gold plan</h4>
@@ -265,7 +265,7 @@
                     <p>Instalaciones y mensajería</p>
                     <p>Manteciones</p>
                 </div>
-                       <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" type="button"> Ver más</button>
+                       <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" data-toggle="tooltip" data-placement="bottom" title="¡Pronto!" type="button"> Ver más</button>
             </div>
             <div class="col-12 col-sm-3 mb-2 mb-sm-0 py-4">
                 <h4 class="text-uppercase font-weight-bold">Gold plan</h4>
@@ -279,7 +279,7 @@
                     <p>Instalaciones y mensajería</p>
                     <p>Manteciones</p>
                 </div>
-                       <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" type="button"> Ver más</button>
+                       <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" data-toggle="tooltip" data-placement="bottom" title="¡Pronto!" type="button"> Ver más</button>
             </div>
         </div>
     </div>
@@ -287,7 +287,7 @@
         <h2 class="text-uppercase font-weight-bold mb-4 text-white">Quiero edifito</h2>
         <p>Nuestro compromiso es simplificar tu trabajo y mejorar la administración de tu edificio o condominio.</p>
         <h2 class="mb-4 text-white">¿Quieres más información?</h2>
-        <button class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" type="button"> Contáctanos</button>
+        <a class="btn yellow-btn font-weight-bold rounded-0 text-uppercase ml-3" href="#contactUs" type="button"> Contáctanos</a>
     </div>
     <div class="container partners py-5">
         <div class="row d-flex justify-content-around">
@@ -327,7 +327,7 @@
                     <p class="foo-sub"><a>Condominio Compra</a></p>
                     <p class="foo-sub"><a>Base de Administradores</a></p>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 foo-col py-5 px-xl-5">
+                <div class="col-12 col-sm-6 col-md-3 foo-col py-5 px-xl-5" id="contact">
                     <p class="foo-title">Contacto <br>
                         Edifito +562 2988 0800
                     </p>

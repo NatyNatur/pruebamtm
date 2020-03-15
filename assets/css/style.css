@@ -218,8 +218,12 @@ h5 {
     background-color: #DC9C24;
 }
 
-.rol-blue, footer .foo-col:nth-child(4) {
+.rol-blue, footer .foo-col:nth-child(4), .bkgr-navbar, nav:hover {
     background-color: #2C4083;
+}
+
+nav {
+    transition: all .8s ease-in-out;
 }
 
 .plans .plans-row div {
@@ -243,9 +247,9 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    -webkit-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
-    -moz-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
-    box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+    -webkit-box-shadow: inset 3px -2px 171px 12px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 3px -2px 171px 12px rgba(0,0,0,0.75);
+    box-shadow: inset 3px -2px 171px 12px rgba(0,0,0,0.75);
 }
 
 p.foo-title {
