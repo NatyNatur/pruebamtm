@@ -1,4 +1,6 @@
 var modal;
+var modal_button;
+var rol_color;
 
 
 $(document).ready(function() {
@@ -27,6 +29,8 @@ $(document).ready(function() {
         }
     });
 
+    // cambiar fondo header al hacer scroll
+
     $('.closeMoreInfo').on('click', function() {
         $('div.moreInfo').hide();
     })
@@ -38,20 +42,20 @@ $(document).ready(function() {
             duration: 3000,
             easing: 'swing',
             step: function(now) {
-                $(this).text(Math.ceil(now));
+                $(this).text(Math.ceil(now).toLocaleString());
+                // revisar formato para 1000
             }
         });
     });
 
     $('#rolModal').on('show.bs.modal', function(event) {
-        var button = $(event.relatedTarget) // Button that triggered the modal
+        modal_button = $(event.relatedTarget) // Button that triggered the modal
         //var rol_html = button.prev('h2').html();
-        var img = button.prevAll('img').first().attr('src');
-        console.log(img);
-        var rol_name = button.data('rolname');
-        var rol_sub = button.data('sub');
-        var rol_descr = button.data('descr');
-        var rol_color = button.data('color');
+        var img = modal_button.prevAll('img').first().attr('src');
+        var rol_name = modal_button.data('rolname');
+        var rol_sub = modal_button.data('sub');
+        var rol_descr = modal_button.data('descr');
+        rol_color = modal_button.data('color');
 
         modal = $(this);
         modal.find('.modal-header').addClass('rol-' + rol_color);
@@ -62,4 +66,8 @@ $(document).ready(function() {
     })
 
     // remover clases de colores al cerrar modal.
+    $("#rolModal").on('hide.bs.modal', function(event) {
+        modal.find('.modal-header').removeClass('rol-' + rol_color);
+        modal.find('.modal-body .modal-rol-sub').removeClass(rol_color + 'Font');
+    })
 });
