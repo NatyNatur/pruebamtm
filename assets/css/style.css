@@ -1,6 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
+    word-break: break-word;
+    /* until control all mq */
 }
 
 
@@ -29,6 +31,18 @@ blue #2C4083
 
 .blueFont {
     color: #2C4083;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: .8rem;
 }
 
 .navbar-brand img {
@@ -80,10 +94,11 @@ blue #2C4083
     border-color: #FFF;
     max-width: 2.5rem;
 }
-
+/*
 .firstCarousel div.owl-stage-outer {
     height: 100vh;
 }
+*/
 
 .firstCarousel .car-first-slide {
     background-image: url(../img/edifito-app-para-moviles.jpg);
@@ -102,6 +117,14 @@ blue #2C4083
     box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
 }
 
+.owl-carousel div .textoverlay{
+    position:absolute;
+    display:block;
+    top: 40%;
+    width: 80%;
+    left: 10%;
+}
+
 .car-box {
     width: 45rem;
     padding: 30rem 7rem;
@@ -110,7 +133,7 @@ blue #2C4083
 .owl-nav {
     width: 100%;
     position: absolute;
-    top: 30rem;
+    top: 55%;
     display: flex;
     justify-content: space-between;
     padding: 0rem 3rem;
@@ -126,10 +149,6 @@ blue #2C4083
     outline: none;
 }
 
-.moreInfo {
-    margin-top: -15rem;
-}
-
 .moreInfo div {
     background-color: #2C4083;
     position: relative;
@@ -142,6 +161,7 @@ blue #2C4083
     right: 2rem;
     top: 1rem;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .leaders {
@@ -153,7 +173,7 @@ blue #2C4083
 }
 
 .leaders .leaders-p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .leaders .leaders-counter {
@@ -184,6 +204,22 @@ blue #2C4083
     position: absolute;
     bottom: 1rem;
     right: 2rem;
+}
+
+.rol-red {
+    background-color: #C7564F;
+}
+
+.rol-purple {
+    background-color: #7C629D;
+}
+
+.rol-yellow {
+    background-color: #DC9C24;
+}
+
+.rol-blue {
+    background-color: #2C4083;
 }
 
 .overlay {
@@ -220,6 +256,15 @@ blue #2C4083
 }
 
 @media (min-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
     .navbar-expand-md .navbar-collapse {
         display: block !important;
         -ms-flex-preferred-size: auto;
@@ -227,6 +272,12 @@ blue #2C4083
     }
     .navbar-brand img {
         height: 4rem;
+    }
+    .owl-carousel div .textoverlay {
+        width: 45%;
+    }
+    .moreInfo {
+        margin-top: -15rem;
     }
     .leaders .leaders-p {
         font-size: 1.7rem;
