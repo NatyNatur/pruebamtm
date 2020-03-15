@@ -206,19 +206,19 @@ h5 {
     right: 2rem;
 }
 
-.rol-red {
+.rol-red, footer .foo-col:nth-child(1) {
     background-color: #C7564F;
 }
 
-.rol-purple {
+.rol-purple, footer .foo-col:nth-child(2) {
     background-color: #7C629D;
 }
 
-.rol-yellow {
+.rol-yellow, footer .foo-col:nth-child(3) {
     background-color: #DC9C24;
 }
 
-.rol-blue {
+.rol-blue, footer .foo-col:nth-child(4) {
     background-color: #2C4083;
 }
 
@@ -246,6 +246,22 @@ h5 {
     -webkit-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
     -moz-box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
     box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
+}
+
+p.foo-title {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+p.foo-sub {
+    font-size: .8rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+footer .img-download {
+    height: 2rem;
+    border-radius: 10%;
 }
 
 @media (min-width: 768px) {
