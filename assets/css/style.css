@@ -49,6 +49,10 @@ h5 {
     height: 3rem;
 }
 
+.navbar-toggler:focus {
+    outline: none;
+}
+
 .rs-icons {
     color: #FFF;
     font-size: 1.5rem;
@@ -160,9 +164,9 @@ h5 {
 
 .closeMoreInfo {
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     top: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -325,5 +329,9 @@ footer .img-download {
     }
     .leaders .leaders-border-right {
         border-right: 3px solid #FFF;
+    }
+    .closeMoreInfo {
+        right: 2rem;
+        font-size: 2rem;
     }
 }
