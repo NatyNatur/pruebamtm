@@ -61,7 +61,8 @@ h5 {
     margin-right: 0;
 }
 
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item .nav-link,
+.foo-sub a {
     font-size: .9rem;
     color: #FFF;
 }
@@ -94,6 +95,8 @@ h5 {
     border-color: #FFF;
     max-width: 2.5rem;
 }
+
+
 /*
 .firstCarousel div.owl-stage-outer {
     height: 100vh;
@@ -117,17 +120,16 @@ h5 {
     box-shadow: inset 0px 200px 244px 101px rgba(0, 0, 0, 0.82);
 }
 
-.owl-carousel div .textoverlay{
-    position:absolute;
-    display:block;
+.img-filtered {
+    filter: brightness(50%)
+}
+
+.owl-carousel div .textoverlay {
+    position: absolute;
+    display: block;
     top: 40%;
     width: 80%;
     left: 10%;
-}
-
-.car-box {
-    width: 45rem;
-    padding: 30rem 7rem;
 }
 
 .owl-nav {
@@ -172,15 +174,18 @@ h5 {
     letter-spacing: .8rem;
 }
 
-.leaders .leaders-p, .plans-p {
+.leaders .leaders-p,
+.plans-p {
     font-size: 1rem;
 }
 
-.leaders .leaders-counter, .plans-p .plans-price {
+.leaders .leaders-counter,
+.plans-p .plans-price {
     font-size: 2rem;
 }
 
-.rol-card, .bckcolor-gray {
+.rol-card,
+.bckcolor-gray {
     background-color: #F1F1F1;
 }
 
@@ -206,28 +211,41 @@ h5 {
     right: 2rem;
 }
 
-.rol-red, footer .foo-col:nth-child(1) {
+.rol-red,
+footer .foo-col:nth-child(1) {
     background-color: #C7564F;
 }
 
-.rol-purple, footer .foo-col:nth-child(2) {
+.rol-purple,
+footer .foo-col:nth-child(2) {
     background-color: #7C629D;
 }
 
-.rol-yellow, footer .foo-col:nth-child(3) {
+.rol-yellow,
+footer .foo-col:nth-child(3) {
     background-color: #DC9C24;
 }
 
-.rol-blue, footer .foo-col:nth-child(4), .bkgr-navbar, nav:hover {
+.rol-blue,
+footer .foo-col:nth-child(4),
+.bkgr-navbar,
+nav:hover {
     background-color: #2C4083;
+}
+
+.modal-rol-descr p {
+    font-size: .8rem;
 }
 
 nav {
     transition: all .8s ease-in-out;
 }
 
-.plans .plans-row div {
+.plans .plans-row div.plans-col {
     background-color: #FFF;
+    -webkit-box-shadow: 6px 7px 14px -2px rgba(172, 172, 175, 1);
+    -moz-box-shadow: 6px 7px 14px -2px rgba(172, 172, 175, 1);
+    box-shadow: 6px 7px 14px -2px rgba(172, 172, 175, 1);
 }
 
 .plans .plans-row div:nth-child(1) {
@@ -247,9 +265,9 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    -webkit-box-shadow: inset 3px -2px 171px 12px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 3px -2px 171px 12px rgba(0,0,0,0.75);
-    box-shadow: inset 3px -2px 171px 12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 3px -2px 171px 12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 3px -2px 171px 12px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 3px -2px 171px 12px rgba(0, 0, 0, 0.75);
 }
 
 p.foo-title {
@@ -260,6 +278,10 @@ p.foo-title {
 p.foo-sub {
     font-size: .8rem;
     margin-bottom: 0;
+}
+
+.foo-sub a {
+    font-size: .8rem;
     cursor: pointer;
 }
 
@@ -288,14 +310,17 @@ footer .img-download {
     }
     .owl-carousel div .textoverlay {
         width: 45%;
+        top: 50%;
     }
     .moreInfo {
         margin-top: -15rem;
     }
-    .leaders .leaders-p, .plans-p {
+    .leaders .leaders-p,
+    .plans-p {
         font-size: 1.5rem;
     }
-    .leaders .leaders-counter, .plans-p .plans-price {
+    .leaders .leaders-counter,
+    .plans-p .plans-price {
         font-size: 2.3rem;
     }
     .leaders .leaders-border-right {
